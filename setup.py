@@ -29,7 +29,7 @@ setup(name='pyfasta',
       tests_require=['nose'],
       test_suite='nose.collector',
       zip_safe=False,
-      install_requires=[
+      install_requires=[ "numpy"
           # -*- Extra requirements: -*-
       ],
       scripts=[],
