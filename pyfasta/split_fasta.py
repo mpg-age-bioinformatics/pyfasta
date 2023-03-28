@@ -5,7 +5,7 @@ import collections
 import string
 import sys
 import optparse
-from cStringIO import StringIO
+from io import StringIO
 
 
 def newnames(oldname, n, kmers=None, overlap=None, header=None):
