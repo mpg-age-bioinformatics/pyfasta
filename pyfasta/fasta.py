@@ -5,7 +5,7 @@ from collections import Mapping
 import sys
 import numpy as np
 
-from records import NpyFastaRecord
+from .records import NpyFastaRecord
 
 # string.maketrans is bytes.maketrans in Python 3, but
 # we want to deal with strings instead of bytes
