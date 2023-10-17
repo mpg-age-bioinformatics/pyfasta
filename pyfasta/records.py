@@ -124,7 +124,7 @@ class FastaRecord(object):
         fh.seek(self.start)
 
 
-        if isinstance(islice, (int, long)):
+        if isinstance(islice, int):
             if islice < 0:
                 if -islice > self.stop - self.start:
                     raise IndexError
@@ -189,7 +189,7 @@ class NpyFastaRecord(FastaRecord):
         return mm
 
     def getdata(self, islice):
-        if isinstance(islice, (int, long)):
+        if isinstance(islice, int):
             if islice >= 0:
                 islice += self.start
             else:
