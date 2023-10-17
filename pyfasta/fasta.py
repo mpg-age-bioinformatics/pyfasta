@@ -1,9 +1,14 @@
 from __future__ import print_function
 import string
 import os.path
-from collections import Mapping
 import sys
+
 import numpy as np
+
+if sys.version_info <= (3, 9):
+    from collections import Mapping
+else:
+    from collections.abc import Mapping
 
 from .records import NpyFastaRecord
 
